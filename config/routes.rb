@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :articles do
     # Define comments as a nested resource within articles
     resources :comments
+  end
 
   root 'main#index'
 end
